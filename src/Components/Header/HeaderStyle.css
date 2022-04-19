@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.main--header{
+    display: flex;
+    flex-direction: column;
+}
+.navbar-toggler-button{
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.main--presentation{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main--logo img{
+    max-width: 300px;
+}
+.search--bar{
+    display: flex;
+    margin: 25px;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+}
+.search--bar input{
+    padding: 5px;
+    outline: none;
+    width: 500px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid rgb(28, 96, 221);
+}
+.search--bar button{
+    padding: 5px;
+    outline: none;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid rgb(28, 96, 221);
+    transition: all ease .3s;
+    color: white;
+    background-color: rgb(28, 96, 221);
+}
+.search--bar button:hover{
+    opacity: .75;
+}
+@media(max-width: 992px){
+    
+    .category h4{
+        font-size: 24px;
+    }
+    .category i{
+        font-size: 48px;
+    }
+}
+@media(max-width: 768px){
+    .search--bar input{
+        width: 350px;
+    }
+    .categories--section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .category h4{
+        font-size: 20px;
+    }
+    .category i{
+        font-size: 40px;
+    }
+}
+@media(max-width: 576px){
+    .search--bar input{
+        width: 250px;
+    }
+    .categories--section{
+        grid-template-columns: 1fr;
+    }
+    .category h4{
+        font-size: 32px;
+    }
+    .category i{
+        font-size: 64px;
+    }
+}

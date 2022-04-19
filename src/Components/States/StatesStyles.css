@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.state--section{
+    display: grid;
+    list-style: none;
+    justify-content: center;
+    align-items: baseline;
+}
+.state--section h3{
+    margin-right: 25px;
+    color: #06a125;
+    font-weight: 800;
+}
+.states--link{
+    text-decoration: none;
+    margin-right: 25px;
+    transition: all ease .3s;
+}
+.states--link:hover{
+    text-decoration: underline;
+    transform: translateY(-5px);
+}
+.state--item h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+@media(max-width: 768px){
+    .state--section{
+        grid-template-columns: 1fr 1fr;
+    }
+}
